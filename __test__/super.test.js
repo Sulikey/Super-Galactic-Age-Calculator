@@ -4,7 +4,7 @@ import Age from "../src/super.js";
 describe("Age", () => {
   let planetAge;
   beforeEach ( ()=> {
-    planetAge = new Age(32);
+    planetAge = new Age(32,10);
   });
 
   test("should show an Age constructor with properties", () => {
@@ -32,7 +32,6 @@ describe("Age", () => {
   });
 
   test("should return how many years have passed on each planet since past birthday", () => {
-    expect(planetAge.showPastBirthday()).toEqual("10 years ago. Earth: 22 years old, mercury: 92 years old, venus: 35 years old, mars: 12 years old, jupiter: 2 years old");
+    expect(planetAge.showPastBirthday()).toEqual("If a user is 32 and we want to calculate how many years have passed since their 10th birthday. Earth: 22 years have passed, Mercury: 91 years have passed, Venus: 35 years have passed, Mars: 11 years have passed, Jupiter: 1 years have passed");
   });
-
 });
