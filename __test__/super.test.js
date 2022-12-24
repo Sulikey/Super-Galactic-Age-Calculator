@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Age from "../src/super.js";
 
 describe("Age", () => {
@@ -8,5 +9,10 @@ describe("Age", () => {
 
   test("should show an Age constructor with properties", () => {
     expect(planetAge.earthAge).toEqual(32);
+  });
+
+  test("should return age in mercury years", () => {
+    planetAge.mercury();
+    expect(planetAge.earthAge).toEqual(133);
   });
 });
