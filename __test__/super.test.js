@@ -34,4 +34,8 @@ describe("Age", () => {
   test("should return how many years have passed on each planet since past birthday", () => {
     expect(planetAge.showPastBirthday()).toEqual("If a user is 32 and we want to calculate how many years have passed since their 10th birthday. Earth: 22 years have passed, Mercury: 91 years have passed, Venus: 35 years have passed, Mars: 11 years have passed, Jupiter: 1 years have passed");
   });
+
+  test("should return how many years have yet to pass until  future birthday", () => {
+    expect(planetAge.showFutureBirthdate()).toEqual("If a user is 32 and we want to calculate how many years have yet to pass until they are 102, we would find the following: Earth: 70 years have yet to pass, Mercury: 292 years have yet to pass, Venus: 113 years have yet to pass, Mars: 37 years have yet to pass, Jupiter: 6 years have yet to pass");
+  });
 });
