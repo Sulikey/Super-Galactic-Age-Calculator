@@ -20,4 +20,9 @@ describe("Age", () => {
     planetAge.venus();
     expect(planetAge.earthAge).toEqual(52);
   });
+
+  test("should return age in mars years", () => {
+    planetAge.mars();
+    expect(planetAge.earthAge).toEqual(17);
+  });
 });
