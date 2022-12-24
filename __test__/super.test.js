@@ -28,6 +28,6 @@ describe("Age", () => {
 
   test("should return age in jupiter years", () => {
     planetAge.jupiter();
-    expected(planetAge.earthAge).toEqual(3);
+    expect(planetAge.earthAge).toEqual(3);
   });
 });
