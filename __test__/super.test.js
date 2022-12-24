@@ -30,4 +30,9 @@ describe("Age", () => {
     planetAge.jupiter();
     expect(planetAge.earthAge).toEqual(3);
   });
+
+  test("should return how many years have passed on each planet since past birthday", () => {
+    expect(planetAge.showPastBirthday()).toEqual("10 years ago. Earth: 22 years old, mercury: 92 years old, venus: 35 years old, mars: 12 years old, jupiter: 2 years old");
+  });
+
 });
