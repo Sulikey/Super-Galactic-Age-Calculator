@@ -10,4 +10,8 @@ export default class Age {
   venus() {
     this.earthAge = parseInt((this.earthAge / 0.62).toFixed());
   }
+
+  mars() {
+    this.earthAge = parseInt((this.earthAge / 1.88 ).toFixed());
+  }
 }
