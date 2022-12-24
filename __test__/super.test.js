@@ -15,4 +15,9 @@ describe("Age", () => {
     planetAge.mercury();
     expect(planetAge.earthAge).toEqual(133);
   });
+
+  test("should return age in venus years", () => {
+    planetAge.venus();
+    expect(planetAge.earthAge).toEqual(51)
+  });
 });
