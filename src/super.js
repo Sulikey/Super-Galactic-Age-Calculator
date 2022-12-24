@@ -40,4 +40,14 @@ export default class Age {
     return youWouldBe;
   }
 
+  showFutureBirthday() {
+    let futureEarthAge = this.futureBirthday - this.earthAge;
+    let futureMercuryAge = parseInt((this.futureBirthday - this.earthAge) / .24);
+    let futureVenusAge = parseInt((this.futureBirthday - this.earthAge) / .62);
+    let futureMarsAge = parseInt ((this.futureBirthday - this.earthAge) / 1.88);
+    let futureJupiterAge = parseInt ((this.futureBirthday - this.earthAge) / 11.86);
+    let youWouldBe = `If a user is 32 and we want to calculate how many years have yet to pass until they are 102, we would find the following. Earth: ${futureEarthAge} years have yet to pass, Mercury: ${futureMercuryAge} years have yet to pass, Venus: ${futureVenusAge} years have yet to pass, Mars: ${futureMarsAge} years have yet to pass, Jupiter: ${futureJupiterAge} years have yet to pass`;
+    return youWouldBe;
+  }
+
 }
