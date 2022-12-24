@@ -4,7 +4,7 @@ import Age from "../src/super.js";
 describe("Age", () => {
   let planetAge;
   beforeEach ( ()=> {
-    planetAge = new Age(32,10);
+    planetAge = new Age(32,10, 102);
   });
 
   test("should show an Age constructor with properties", () => {
@@ -36,6 +36,6 @@ describe("Age", () => {
   });
 
   test("should return how many years have yet to pass until  future birthday", () => {
-    expect(planetAge.showFutureBirthdate()).toEqual("If a user is 32 and we want to calculate how many years have yet to pass until they are 102, we would find the following: Earth: 70 years have yet to pass, Mercury: 292 years have yet to pass, Venus: 113 years have yet to pass, Mars: 37 years have yet to pass, Jupiter: 6 years have yet to pass");
+    expect(planetAge.showFutureBirthday()).toEqual("If a user is 32 and we want to calculate how many years have yet to pass until they are 102, we would find the following. Earth: 70 years have yet to pass, Mercury: 291 years have yet to pass, Venus: 112 years have yet to pass, Mars: 37 years have yet to pass, Jupiter: 5 years have yet to pass");
   });
 });
