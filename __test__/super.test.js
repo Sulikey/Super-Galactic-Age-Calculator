@@ -25,4 +25,9 @@ describe("Age", () => {
     planetAge.mars();
     expect(planetAge.earthAge).toEqual(17);
   });
+
+  test("should return age in jupiter years", () => {
+    planetAge.jupiter();
+    expected(planetAge.earthAge).toEqual(3);
+  });
 });
