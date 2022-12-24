@@ -9,3 +9,4 @@ describe("Age", () => {
   test("should show an Age constructor with properties", () => {
     expect(planetAge.earthAge).toEqual(32);
   });
+});
